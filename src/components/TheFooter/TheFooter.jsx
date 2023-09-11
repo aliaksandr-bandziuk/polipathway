@@ -1,5 +1,12 @@
 import React from 'react'
-import { FaTelegramPlane, FaWhatsapp, FaRegEnvelope } from 'react-icons/fa'
+import {
+  FaTelegramPlane,
+  FaWhatsapp,
+  FaRegEnvelope,
+  FaInstagram,
+  FaFacebookF,
+  FaTiktok,
+} from 'react-icons/fa'
 
 import styles from './TheFooter.module.scss';
 import Link from 'next/link';
@@ -91,10 +98,115 @@ export const TheFooter = () => {
                     />
                   </Link>
                 </div>
+                <div className={styles.footerBottomText}>
+                  <p className={styles.text}>
+                    We believe that education is a fundamental right and are committed to helping students from different countries and continents.
+                    Contact us and take the first step into your successful future!
+                  </p>
+                  <p className={styles.footerDesctiption}>Follow us in social media:</p>
+                </div>
+                <div className={styles.footerBottomSocial}>
+                  <Link
+                    href="https://t.me/+zLBhFlT7W1Q0MWM0"
+                    className={styles.footerBottomSocialItem}
+                  >
+                    <FaTelegramPlane fontSize="1.2em" padding="5px" background="#032540" />
+                  </Link>
+                  <Link
+                    href="https://t.me/+zLBhFlT7W1Q0MWM0"
+                    className={styles.footerBottomSocialItem}
+                  >
+                    <FaInstagram fontSize="1.2em" padding="5px" background="#032540" />
+                  </Link>
+                  <Link
+                    href="https://t.me/+zLBhFlT7W1Q0MWM0"
+                    className={styles.footerBottomSocialItem}
+                  >
+                    <FaFacebookF fontSize="1.2em" padding="5px" background="#032540" />
+                  </Link>
+                  <Link
+                    href="https://t.me/+zLBhFlT7W1Q0MWM0"
+                    className={styles.footerBottomSocialItem}
+                  >
+                    <FaTiktok fontSize="1.2em" padding="5px" background="#032540" />
+                  </Link>
+                  <Link
+                    href="https://t.me/+zLBhFlT7W1Q0MWM0"
+                    className={styles.footerBottomSocialItem}
+                  >
+                    <FaWhatsapp fontSize="1.2em" padding="5px" background="#032540" />
+                  </Link>
+                </div>
               </div>
-              <div className={styles.gridItem}></div>
-              <div className={styles.gridItem}></div>
-              <div className={styles.gridItem}></div>
+              <div className={styles.gridItem}>
+                <h4 className={styles.gridItemSubtitle}>Navigate</h4>
+                <ul className={styles.gridItemLinks}>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/">Main Page</Link>
+                  </li>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/about">About us</Link>
+                  </li>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/services">Why Poland</Link>
+                  </li>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/contact">Services & Prices</Link>
+                  </li>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/contact">Universities & Courses</Link>
+                  </li>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/contact">Contact Us</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className={styles.gridItem}>
+                <h4 className={styles.gridItemSubtitle}>Services</h4>
+                <ul className={styles.gridItemLinks}>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/">Admission Process</Link>
+                  </li>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/about">Student Visa Help</Link>
+                  </li>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/services">Residence Permit</Link>
+                  </li>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/contact">Documentary Consultation</Link>
+                  </li>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/services">Transfer To Polish University</Link>
+                  </li>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/contact">English Preparatory Course</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className={styles.gridItem}>
+                <h4 className={styles.gridItemSubtitle}>FAQ</h4>
+                <ul className={styles.gridItemLinks}>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/">How to apply in Poland?</Link>
+                  </li>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/about">How to get a Visa?</Link>
+                  </li>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/services">What is the cost of living?</Link>
+                  </li>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/contact">Is Poland a popular direction?</Link>
+                  </li>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/services">Do i need a work permit?</Link>
+                  </li>
+                  <li className={styles.gridItemLink}>
+                    <Link href="/contact">Is the Polsh Diploma recognized?</Link>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div className={styles.divider}></div>
             <div className={styles.copyrigth}>
