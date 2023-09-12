@@ -101,6 +101,11 @@
   background-color: #032540;
   padding: 55px;
   text-align: center;
+
+  @media (max-width: 500px) {
+    padding: 0;
+    background-color: #031f35;
+  }
 }
 
 .footerBottom {
@@ -143,12 +148,12 @@
 }
 
 .gridItemLink {
-  font-size: 16px;
+  font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
   font-weight: 500;
   line-height: 120%;
   color: #fff;
   transition: all 0.2s ease;
-  margin-bottom: 20px;
+  margin-bottom: clamp(0.938rem, 0.824rem + 0.57vw, 1.25rem);
 
   &:hover {
     color: #ffa800;
@@ -174,6 +179,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    justify-content: start;
+    gap: 10px;
+  }
 }
 
 .footerBottomSocialItem {

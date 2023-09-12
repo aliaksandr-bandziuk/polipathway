@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { MdClose, MdDensityMedium, MdDehaze } from "react-icons/md";
+import { FaAlignRight } from 'react-icons/fa'
 import { gsap } from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
@@ -118,40 +120,9 @@ export const TheHeader = () => {
             }}
           >
             {isNavVisible ? (
-              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="26" viewBox="0 0 33 26" fill="none" transform="rotate(45)">
-                <line x1="0" y1="13" x2="33" y2="13" stroke="url(#paint0_linear_13_83)" strokeWidth="3" />
-                <line x1="16.5" y1="0" x2="16.5" y2="26" stroke="url(#paint1_linear_13_83)" strokeWidth="3" />
-                <defs>
-                  <linearGradient id="paint0_linear_13_83" x1="-8.62252e-09" y1="3.46667" x2="36.0395" y2="3.46666" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#ffffff" />
-                    <stop offset="1" stopColor="#ffa800" />
-                  </linearGradient>
-                  <linearGradient id="paint1_linear_13_83" x1="-3.90789" y1="26" x2="33" y2="26" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#ffffff" />
-                    <stop offset="1" stopColor="#ffa800" />
-                  </linearGradient>
-                </defs>
-              </svg>
+              <MdClose className={styles.icon} fontSize="1.8em" />
             ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="26" viewBox="0 0 33 26" fill="none">
-                <rect width="33" height="3.71429" rx="1.85714" fill="url(#paint0_linear_13_83)" />
-                <rect y="22.2857" width="33" height="3.71429" rx="1.85714" fill="url(#paint1_linear_13_83)" />
-                <rect y="11.1429" width="33" height="3.71429" rx="1.85714" fill="url(#paint2_linear_13_83)" />
-                <defs>
-                  <linearGradient id="paint0_linear_13_83" x1="-8.62252e-09" y1="3.46667" x2="36.0395" y2="3.46666" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#ffffff" />
-                    <stop offset="1" stopColor="#ffa800" />
-                  </linearGradient>
-                  <linearGradient id="paint1_linear_13_83" x1="-3.90789" y1="26" x2="33" y2="26" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#ffffff" />
-                    <stop offset="1" stopColor="#ffa800" />
-                  </linearGradient>
-                  <linearGradient id="paint2_linear_13_83" x1="5.21062" y1="13" x2="33.0001" y2="13" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#ffffff" />
-                    <stop offset="1" stopColor="#ffa800" />
-                  </linearGradient>
-                </defs>
-              </svg>
+                <MdDehaze className={styles.icon} fontSize="1.8em" />
             )}
           </div>
         </div>
