@@ -1,0 +1,46 @@
+.heroMain {
+  background: linear-gradient(0deg, rgba(26, 26, 37, 0.3), rgba(31, 36, 49, 0.3)), url('../../assets/images/warsaw1.jpg');
+  background-size: cover;
+  // height: 100vh;
+  position: relative;
+  padding-top: 350px;
+  padding-bottom: 350px;
+
+  @media (max-width: 768px) {
+    margin-top: 70px;
+  }
+}
+
+.heroMainWrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 65%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.title {
+  font-size: clamp(2.188rem, 1.733rem + 2.27vw, 3.438rem);
+  line-height: 120%;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: clamp(1.25rem, 1.733rem + 2.27vw, 1.563rem);
+  line-height: 150%;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.heroMainBtns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
