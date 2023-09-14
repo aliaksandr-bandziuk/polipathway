@@ -39,7 +39,7 @@ export const TheFooter = () => {
               </div>
               <div className={styles.footerText}>
                 <p>
-                  If you have always dreamed of getting an education abroad or migration, don't shelve that dream! PoliPathWay is here to help you with every step on your pathway. We offer a variety of services that help to make the admission process as easy and comfortable as possible. Don't miss your opportunity to study abroad!
+                  If you have always dreamed of getting an education abroad or migration, don&apos;t shelve that dream! PoliPathWay is here to help you with every step on your pathway. We offer a variety of services that help to make the admission process as easy and comfortable as possible. Don&apos;t miss your opportunity to study abroad!
                 </p>
               </div>
               <h4 className={styles.footerSubtitle}>Contact us in any convenient way!</h4>

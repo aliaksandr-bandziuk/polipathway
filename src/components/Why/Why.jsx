@@ -27,7 +27,7 @@ export const Why = () => {
     <section className={styles.whySection}>
       <div className="container">
         <h2 className={styles.title}>Why Study in Poland?</h2>
-        <p className={styles.text}>Select the university and country wisely — it's a new chapter in your life.</p>
+        <p className={styles.text}>Select the university and country wisely — it&apos;s a new chapter in your life.</p>
         <div className={styles.whyWrapper}>
           <div className={styles.imageBlock}>
             <Image src={whyBg} alt="Why Study in Poland?" />
