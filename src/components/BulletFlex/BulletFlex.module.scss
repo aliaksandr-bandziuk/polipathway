@@ -1,0 +1,24 @@
+.bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.pic {
+  border-radius: 50%;
+  border: 1px solid #0183ae;
+  background-color: #032540;
+  padding: 25px;
+}
+
+.desc {
+  font-size: clamp(1.125rem, 1.08rem + 0.23vw, 1.25rem);
+  line-height: 1.6;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 1.25rem;
+}

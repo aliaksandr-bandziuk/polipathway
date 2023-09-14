@@ -26,5 +26,51 @@ textarea {
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 10px;
-  /* position: relative; */
+  position: relative;
+}
+
+.swiperButtonPrev {
+  background-color: #031f35;
+  padding: 9px;
+  border: 1px solid #031f35;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.swiperButtonPrev:hover {
+  background-color: inherit;
+  transform: translateY(-50%) scale(1.1);
+  border: 1px solid #031f35;
+}
+
+.swiperButtonNext {
+  background-color: #031f35;
+  padding: 9px;
+  border: 1px solid #031f35;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.swiperButtonNext:hover {
+  background-color: inherit;
+  transform: translateY(-50%) scale(1.1);
+  border: 1px solid #031f35;
 }
