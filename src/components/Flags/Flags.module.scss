@@ -1,0 +1,36 @@
+.flags {
+  background: linear-gradient(0deg, rgba(3, 31, 53, 0.56), rgba(3, 31, 53, 0.56)), url('../../assets/images/flagsBg.webp');
+  background-size: cover;
+  padding-top: clamp(2.188rem, 1.392rem + 3.98vw, 4.375rem);
+  padding-bottom: clamp(2.188rem, 1.392rem + 3.98vw, 4.375rem);
+}
+
+.title {
+  font-size: clamp(2rem, 1.636rem + 1.82vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 45px;
+}
+
+.slide {
+  margin-right: 20px;
+
+  img {
+    aspect-ratio: 4/2;
+    object-fit: cover;
+  }
+}
+
+.flag {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flagText {
+  font-size: clamp(1.25rem, 1.091rem + 0.91vw, 1.5rem);
+  font-weight: 500;
+}

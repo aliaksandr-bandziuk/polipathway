@@ -1,0 +1,35 @@
+.contact {
+  background: linear-gradient(0deg, rgba(3, 31, 53, 0.56), rgba(3, 31, 53, 0.56)), url('../../assets/images/contactBg.png');
+  padding-top: clamp(2.188rem, 1.392rem + 3.98vw, 4.375rem);
+  padding-bottom: clamp(2.188rem, 1.392rem + 3.98vw, 4.375rem);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.title {
+  font-size: clamp(2rem, 1.636rem + 1.82vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.text {
+  font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
+  color: #fff;
+  margin-bottom: 1.25rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
